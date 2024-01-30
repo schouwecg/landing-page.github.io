@@ -5,27 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title id="title">Landing Page Vintage Fashion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <header>
-      <img class="header-img" src="logo.png" />
-      <nav>
+    <header id="header">
+      <img id="header-img" src="" />
+
+      <nav id="nav-bar" class="nav-color">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="index.html" id="colored">Home</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="gallery">
+    <section id="home" class="landing">
+      <h1>Welcome to Vintage Fashion!</h1>
+      <p>
+        Here you'll find everything Vintage, we offer lots & lots of Clothing
+        and Accessories!
+      </p>
+      <p>
+        Below you'll see a very small part of our large collection, click
+        <a href="#contact"><span id="colored"> Here</span></a> to receive a FREE
+        catalogue!
+      </p>
+    </section>
+
+    <h1 class="produkten" id="products">Products</h1>
+    <div id="img-div">
       <img
         src="https://designyoutrust.com/wp-content/uploads/2016/02/24-13.jpg"
         alt="girl fashion"
@@ -39,48 +52,78 @@
         alt="man fashion"
       />
       <img
-        src="https://static.boredpanda.com/blog/wp-content/uploads/2016/05/vintage-black-and-white-women-fashion-photography-nina-leen-115-5730a0c06c684__700.jpg"
-        alt="girls fashion"
-      />
-      <img
         src="https://img.freepik.com/premium-photo/fashion-male-model-retro-vintage-old-style_265223-57368.jpg"
         alt="man fashion"
       />
-      <img
-        src="https://i.pinimg.com/736x/e6/c9/30/e6c930c6b6f86de9131df4381b6ce9ed.jpg"
-        alt="man fashion"
-      />
-      
     </div>
 
-    <div id="cta-message">
-      <p>
-        Want to be the first to hear about discounts, and receive updates, plus
-        a FREE catalogue? Click 
-        <span></span> <a id="cta" href="#cta">Here</a></span>
-      </p>
+    <h1 class="produkten" id="pricing">Prices</h1>
+    <section id="products" class="products">
+      <div class="card">
+        <img
+          src="https://static.life.com/wp-content/uploads/migrated/2014/02/140206-nina-leen-fashion-1950-06.jpg"
+          alt="girl fashion"
+        />
+        <h2></h2>
+        <p class="price">$ 200</p>
+        <button>Buy Now</button>
       </div>
+      <div class="card">
+        <img
+          src="https://static.life.com/wp-content/uploads/migrated/2014/02/140206-nina-leen-fashion-1950-03.jpg"
+          alt="girl fashion"
+        />
+        <h2></h2>
+        <p class="price">$ 400</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <img
+          src="https://static.life.com/wp-content/uploads/migrated/2014/02/140206-nina-leen-fashion-1950-05.jpg"
+          alt="girl fashion"
+        />
+        <h2></h2>
+        <p class="price">$ 750</p>
+        <button>Buy Now</button>
+      </div>
+    </section>
+
+    <h1 class="produkten" id="contact">Contact</h1>
+    <section class="contact">
+      <h2>Contact Us for a <span class="cta">FREE</span> Catalogue</h2>
+      <p>Or, have questions or suggestions? Reach out to us!</p>
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="post"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="What is your email adress?"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input id="submit" type="submit" value="Send your Message" />
+      </form>
+    </section>
+
+    <div id="video-div">
+      
+        <iframe id="video" width="460" height="215" src="https://www.youtube.com/embed/SB5eIfHXkWQ?si=0tCBQKOCGrqp-LJ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+
+      <iframe id="video" width="460" height="215" src="https://www.youtube.com/embed/sI9jZjbGKe0?si=17Jp8g40IabGO2uU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      <iframe id="video" width="460" height="215" src="https://www.youtube.com/embed/7LqbuTrJMWg?si=blF_0faVSXxK2aVx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
     </div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <h2>About</h2>
-    <p>Vintage Fashion went open for business on december 23rd 2020. We are a young company, a growing company, planning on opening a second store in 2024.
-      We only use the best products, we won't let our customers down. But when you're not satisfied with the product that you bought at our store, you can get your
-      money back, or get another product. We care about our customers. See you soon at our store! 
-    </p>
-<br>
-<br>
-<br>
-    <P id="cta-message">The only thing we ask from you is your email address. In return you will be the first to hear about discounts, and updates.</P><br>
-    <p id="cta-message">You'll also receive our brand new catalogue for 2024.</p>
-
-    <form id="cta">
-      <label for="email" id="email-label"> What is your email address?</label>
-      <input type="email" id="email" name="email" placeholder="Your email-address.." required>
-      <button id="submit">Submit</submit>
-    </form>
   </body>
 </html>

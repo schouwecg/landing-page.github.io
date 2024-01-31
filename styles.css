@@ -58,7 +58,7 @@
   
   .landing {
       text-align: center;
-      /*margin: 50px 0;*/
+     
   }
   
   .products {
@@ -71,7 +71,6 @@
   .card {
       border: 1px solid #ccc;
       padding: 20px;
-      
       background-color: #e5e5e5;
       
   }
@@ -86,37 +85,83 @@
       margin: 100px 0;
   }
   
-  form {
-      display: flex;
-      flex-direction: column;
+ form {
+    background-color: #e5e5e5;
+    width: 50%;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius:10px;
+    display: inline-block;
+    
+  }
+
+  #form-align {
+  display: flex;
+	flex-direction: column;
+	margin:  0 auto;
+	max-width: 800px;
+	align-content: center;
+	padding: 0px;
       
   }
   
   label {
-      margin-bottom: 10px;
+    display: inline-block;
+    margin: 0.5rem;
+    width: 50%;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   
-  input, textarea {
-      margin-bottom: 20px;
-      padding: 10px;
-      border: 1px solid #ccc;
+  input {
+    display: inline-block;
+    background-color: #F5F7F8;
+    width: 300px;
+    font-size: 22px;
+    border-radius:10px;
+    margin-left: 20px;
+   
+      
   }
   
-  button {
+    input, textarea {
+    margin-bottom: 20px;
+    border: 2px solid black;
+  }
+
+  textarea {
+    width: 300px;
+    background-color: #F5F7F8;
+    resize: none;
+    font-size: 22px;
+    border-radius:10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+   
+    border: 2px solid black;
+    
+    
+    
+  }
+  
+  
+  #submit {
       background-color: #333;
       color: white;
-      padding: 10px;
+      margin-top: 30px;
       cursor: pointer;
   }
   
-  button:hover {
+  #submit:hover {
       background-color: #555;
   }
   
   #home {
       padding-top: 125px;
       text-align: center;
-      font-family: 'Audiowide', sans-serif;
+      font-family: 'Chicle', serif;
       font-size: 25px;
   }
   
@@ -155,10 +200,7 @@
       width: 350px;
     }
   
-  
-  
-  
-  .container {
+   .container {
       display: flex;
       left: 400;
       height: 300px;
@@ -173,6 +215,7 @@
   .cta {
       font-weight: 900;
       color: orangered;
+      text-align: center;
   }
   #colored {
       color: orangered;
@@ -182,7 +225,7 @@
   .produkten {
       opacity: 0.5;
       display: inline-block;
-      border: 1px solid  grey;
+      
       padding-left: 35px;
   }
   
@@ -192,7 +235,7 @@
   }
   
   .nav-color {
-      opacity: 0.6;
+      opacity: 0.8;
      background: #EBEBEB;
 background: -moz-linear-gradient(45deg, #EBEBEB 0%, #F9F7FF 100%);
 background: -webkit-linear-gradient(45deg, #EBEBEB 0%, #F9F7FF 100%);
@@ -210,6 +253,8 @@ background: linear-gradient(45deg, #EBEBEB 0%, #F9F7FF 100%);
       height: auto;
       margin: 0 auto;
       padding: 20px 10px;
+      padding-bottom: 75px;
+      
     }
     
     #video img {
@@ -218,9 +263,17 @@ background: linear-gradient(45deg, #EBEBEB 0%, #F9F7FF 100%);
       height: auto;
       object-fit: cover;
       border-radius: 10px;
+
     }
     
     #video::after {
       content: "";
       width: 350px;
+
+    }
+
+    .footer {
+      text-align: center;
+      color: orangered;
+      font-size: 25px;
     }
